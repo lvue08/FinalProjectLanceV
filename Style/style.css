@@ -1,1 +1,116 @@
-/* =====Styling Folder===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "Old Standard TT", serif;
+    color: #000000;
+    background-color: #a52a2a66;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.back-button {
+    margin-top: 20px;
+}
+
+.family-image {
+    display: block;
+    width: min(100%, 600px);
+    height: 360px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.family-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 16px;
+    width: min(95%, 1200px);
+    margin: 16px auto;
+}
+
+.family-card {
+    margin: 0;
+    padding: 12px;
+    background-color: #fffefe;
+    border-radius: 8px;
+}
+
+.family-caption {
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+.family-about {
+    width: min(90%, 700px);
+    margin: 8px auto;
+    padding: 16px 24px;
+    background-color: #fffefe;
+    border-radius: 8px;
+}
+
+.hobbies-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 16px;
+    width: min(95%, 1200px);
+    margin: 16px auto;
+}
+
+.hobby-image {
+    display: block;
+    width: 100%;
+    height: 360px;
+    object-fit: contain;
+    background-color: #fffefe;
+    border-radius: 4px;
+}
+
+.goals-image {
+    display: block;
+    width: min(90%, 300px);
+    height: auto;
+    margin: 16px auto;
+    border-radius: 8px;
+}
+
+.chat-message {
+    background-color: #fffefe;
+    border-radius: 6px;
+    padding: 12px;
+    margin: 8px 0;
+    max-width: 80%;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+h1,
+.H1 {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 8px 0;
+    text-align: left;
+}
