@@ -3,30 +3,55 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hobbies</title>
-        <link rel="stylesheet" type="text/css" href="../Style/style.css">
+        <meta name="description" content="Discover Lance's interests in soccer, volleyball, and traveling.">
+        <title>Hobbies | Lance Vang</title>
+        <link rel="stylesheet" href="../Style/style.css">
     </head>
     <body>
-        <h1>Hobbies</h1>
-        <h2>This is about this asian man's hobbies.</h2>
-        <p>Introduction of my hobbies I enjoy playing sports and traveling the world I don't play games as much as I used to anymore because I enjoy my sports more than games right now.</p>
-        <div class="hobbies-gallery">
-            <figure class="family-card">
-                <h3>Soccer</h3>
-                <img src="../Images/IMG_0811.JPG" alt="Soccer" class="hobby-image">
-                <figcaption class="family-caption">This is me in high school my senior year playing soccer I really enjoyed playing soccer and wish I could've done it more I did think to do it in college but didn't decide too because I was gonna foucs on college instead maybe next year.</figcaption>
-            </figure>
-            <figure class="family-card">
-                <h3>Traveling</h3>
-                <img src="../Images/IMG_20260908_103229_825.jpg" alt="Traveling" class="hobby-image">
-                <figcaption class="family-caption">This is me traveling I was at flordia before college started and It was super nice at this cool beach house stayed there for a good week and got to enjoy the weather there until I ahd to come back up here to the cold ass weather...</figcaption>
-            </figure>
-            <figure class="family-card">
-                <h3>Volleyball</h3>
-                <img src="../Images/IMG_20250521_111506_268.webp" alt="Volleyball" class="hobby-image">
-                <figcaption class="family-caption">This is me playing volleyball yes this is the only picture I have I do have videos but Idk if I wanna put them in here but I picked up volleyball in my junior year and played since then, I usually play in hmong tournaments. I don't play for any teams YET but I will probably soon but this sport I enjoy the most. One of my favorite hobbies.</figcaption>
-            </figure>
-        </div>
-        <a href="../index.html" class="nav-button back-button">Back to Home</a>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header">
+            <a class="brand" href="../index.html" aria-label="Lance Vang, home">
+                <span class="brand-mark" aria-hidden="true">LV</span>
+                <span>LANCE VANG</span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="family.html">Family</a>
+                <a href="hobbies.html" aria-current="page">Hobbies</a>
+                <a href="goals.html">Goals</a>
+            </nav>
+        </header>
+
+        <main class="page-main" id="main">
+            <section class="page-heading">
+                <p class="eyebrow">What I enjoy</p>
+                <h1>My hobbies</h1>
+                <p>Sports and travel give me a chance to stay active, try new things, and make good memories.</p>
+            </section>
+            <p class="hobbies-intro">I enjoy playing sports and exploring new places. I don't play video games as much as I used to because I spend more of my free time on sports these days.</p>
+
+            <section class="hobbies-gallery" aria-label="Lance's hobbies">
+                <figure class="hobby-card">
+                    <img src="../Images/IMG_0811.JPG" alt="Lance playing soccer during his senior year of high school" class="hobby-image">
+                    <h2>Soccer</h2>
+                    <figcaption class="hobby-caption">I enjoyed playing soccer during my senior year of high school. I considered playing in college, but decided to focus on my studies first. I may return to the sport in the future.</figcaption>
+                </figure>
+                <figure class="hobby-card">
+                    <img src="../Images/IMG_20260908_103229_825.jpg" alt="A beach house in Florida where Lance stayed during a trip" class="hobby-image">
+                    <h2>Traveling</h2>
+                    <figcaption class="hobby-caption">Before college started, I spent a week in Florida at a beach house. I enjoyed the warm weather and the chance to explore a new place.</figcaption>
+                </figure>
+                <figure class="hobby-card">
+                    <img src="../Images/IMG_20250521_111506_268.webp" alt="Lance playing volleyball" class="hobby-image">
+                    <h2>Volleyball</h2>
+                    <figcaption class="hobby-caption">I started playing volleyball in my junior year and often play in Hmong tournaments. It's one of my favorite sports, and I hope to join a team in the future.</figcaption>
+                </figure>
+            </section>
+            <a href="../index.html" class="button button-secondary back-button">Back to home</a>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2026 Lance Vang · Personal portfolio</p>
+        </footer>
     </body>
 </html>

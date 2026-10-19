@@ -3,23 +3,85 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Final Project</title>
-        <link rel="stylesheet" type="text/css" href="./Style/style.css">
+        <meta name="description" content="Meet Lance, a software development student, athlete, and lifelong learner.">
+        <title>Lance Vue | Personal Portfolio</title>
+        <link rel="stylesheet" href="Style/style.css">
     </head>
+    <body>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Lance Vang, home">
+                <span class="brand-mark" aria-hidden="true">LV</span>
+                <span>LANCE VUE</span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="Pages/family.html">Family</a>
+                <a href="Pages/hobbies.html">Hobbies</a>
+                <a href="Pages/goals.html">Goals</a>
+            </nav>
+        </header>
 
-    <body style="background-color: #a52a2a66;">
-        <h1 class="H1">All about this asian guy</h1>
-        <img src="Images/1000039255.jpg" alt="Image of ME" class="profile-image" height="300">
-        <p>Hello this is my final project its about me Lance and today you'll learn some stuff about me.(maybe)
-            Small introduction about me. I am a student at Western Wisconsin Technical College and I am currently studying software development. I am 5'7 and a half, I am 18 years old and I decided to go IT is because my dad does it and I wanna follow his footsteps into the IT world although I don't think I'll ever be as good as him but he is the person I look up to and strive to become.
-        </p>
-        <h2 class="chat-message">Have a seat chat</h2>
-        <button type="button" class="nav-button" id="welcome-button">Click before you read</button>
-        <p class="chat-message" id="welcome-message" aria-live="polite" hidden></p>
-        <img src="Images/1000022817.jpg" alt="Image of ME" class="profile-image" height="250" width="250">
-        <a href="Pages/family.html" class="nav-button">Family</a>
-        <a href="Pages/hobbies.html" class="nav-button">Hobbies</a>
-        <a href="Pages/goals.html" class="nav-button">Goals</a>
+        <main class="page-main" id="main">
+            <section class="hero-panel" aria-labelledby="intro-heading">
+                <div class="hero-copy">
+                    <p class="eyebrow">Student · Creator · Athlete</p>
+                    <h1 id="intro-heading">Hi, I'm Lance.</h1>
+                    <p class="hero-intro">I'm studying software development at Western Technical College.</p>
+                    <p>I'm working toward a career in IT, inspired by my dad and the example he sets. This site is a little introduction to the people, interests, and goals that matter to me.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="Pages/hobbies.html">Explore my interests</a>
+                        <a class="button button-secondary" href="Pages/goals.html">See my goals</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img class="hero-image" src="Images/1000039255.jpg" alt="Portrait of Lance">
+                    <div class="photo-label">
+                        <span>Currently learning</span>
+                        Software development
+                    </div>
+                </div>
+            </section>
+
+            <section class="welcome-panel" aria-labelledby="welcome-heading">
+                <div class="welcome-copy">
+                    <p class="eyebrow">Glad you're here</p>
+                    <h2 id="welcome-heading">Get to know me</h2>
+                    <p>Take a look around to learn about my family, the sports I enjoy, and what I'm working toward.</p>
+                </div>
+                <button type="button" class="button button-secondary" id="welcome-button" aria-expanded="false" aria-controls="welcome-message">Show welcome message</button>
+                <p class="welcome-response" id="welcome-message" aria-live="polite" hidden></p>
+            </section>
+
+            <section aria-labelledby="explore-heading">
+                <div class="section-heading">
+                    <p class="eyebrow">A little more about me</p>
+                    <h2 id="explore-heading">Explore my story</h2>
+                    <p>Three parts of my life that make me who I am.</p>
+                </div>
+                <div class="topic-grid">
+                    <a class="topic-card" href="Pages/family.html">
+                        <span class="card-kicker">01 / The people</span>
+                        <h3>Family</h3>
+                        <p>Meet the family members who are part of my life.</p>
+                    </a>
+                    <a class="topic-card" href="Pages/hobbies.html">
+                        <span class="card-kicker">02 / The pastimes</span>
+                        <h3>Hobbies</h3>
+                        <p>Sports, travel, and the activities I enjoy.</p>
+                    </a>
+                    <a class="topic-card" href="Pages/goals.html">
+                        <span class="card-kicker">03 / The future</span>
+                        <h3>Goals</h3>
+                        <p>What I'm working toward in school and beyond.</p>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2026 Lance Vang · Personal portfolio</p>
+        </footer>
         <script src="js/script.js"></script>
     </body>
 </html>
